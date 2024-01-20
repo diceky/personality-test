@@ -30,7 +30,7 @@ const Result = ({onReset, answers}) => {
         //console.log(`sortedObj`);
         //console.log(sortedObj);
     
-        if(sortedObj[0][1]===sortedObj[1][1]){
+        if(sortedObj.length > 1 && sortedObj[0][1]===sortedObj[1][1]){
             console.log(`Winner is ${sortedObj[0][0]} and ${sortedObj[1][0]}`);
             winner = parseInt(sortedObj[0][0]);
             runnerUp = parseInt(sortedObj[1][0]);
